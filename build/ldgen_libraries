@@ -81,3 +81,5 @@
 /home/rax/esp/Risc-V-Keyer/build/esp-idf/spiffs/libspiffs.a
 /home/rax/esp/Risc-V-Keyer/build/esp-idf/wifi_provisioning/libwifi_provisioning.a
 /home/rax/esp/Risc-V-Keyer/build/esp-idf/main/libmain.a
+/home/rax/esp/Risc-V-Keyer/build/esp-idf/morse_keyer/libmorse_keyer.a
+/home/rax/esp/Risc-V-Keyer/build/esp-idf/network/libnetwork.a

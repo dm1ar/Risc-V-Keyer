@@ -101,3 +101,5 @@ set substitute-path /COMPONENT_WIFI_PROVISIONING_DIR /home/rax/esp/v5.3/esp-idf/
 set substitute-path /COMPONENT_WPA_SUPPLICANT_DIR /home/rax/esp/v5.3/esp-idf/components/wpa_supplicant
 set substitute-path /COMPONENT_XTENSA_DIR /home/rax/esp/v5.3/esp-idf/components/xtensa
 set substitute-path /COMPONENT_MAIN_DIR /home/rax/esp/Risc-V-Keyer/main
+set substitute-path /COMPONENT_MORSE_KEYER_DIR /home/rax/esp/Risc-V-Keyer/components/morse_keyer
+set substitute-path /COMPONENT_NETWORK_DIR /home/rax/esp/Risc-V-Keyer/components/network

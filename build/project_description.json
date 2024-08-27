@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "Risc-V-Keyer",
-    "project_version":    "1",
+    "project_version":    "51de260-dirty",
     "project_path":       "/home/rax/esp/Risc-V-Keyer",
     "idf_path":           "/home/rax/esp/v5.3/esp-idf",
     "build_dir":          "/home/rax/esp/Risc-V-Keyer/build",
@@ -25,8 +25,8 @@
         "COMPONENT_KCONFIGS_PROJBUILD" : "/home/rax/esp/v5.3/esp-idf/components/bootloader/Kconfig.projbuild;/home/rax/esp/v5.3/esp-idf/components/esp_app_format/Kconfig.projbuild;/home/rax/esp/v5.3/esp-idf/components/esp_rom/Kconfig.projbuild;/home/rax/esp/v5.3/esp-idf/components/esptool_py/Kconfig.projbuild;/home/rax/esp/v5.3/esp-idf/components/partition_table/Kconfig.projbuild"
     },
     "common_component_reqs": [ "cxx", "newlib", "freertos", "esp_hw_support", "heap", "log", "soc", "hal", "esp_rom", "esp_common", "esp_system", "riscv" ],
-    "build_components" : [ "app_trace", "app_update", "bootloader", "bootloader_support", "bt", "cmock", "console", "cxx", "driver", "efuse", "esp-tls", "esp_adc", "esp_app_format", "esp_bootloader_format", "esp_coex", "esp_common", "esp_driver_ana_cmpr", "esp_driver_cam", "esp_driver_dac", "esp_driver_gpio", "esp_driver_gptimer", "esp_driver_i2c", "esp_driver_i2s", "esp_driver_isp", "esp_driver_jpeg", "esp_driver_ledc", "esp_driver_mcpwm", "esp_driver_parlio", "esp_driver_pcnt", "esp_driver_ppa", "esp_driver_rmt", "esp_driver_sdio", "esp_driver_sdm", "esp_driver_sdmmc", "esp_driver_sdspi", "esp_driver_spi", "esp_driver_tsens", "esp_driver_uart", "esp_driver_usb_serial_jtag", "esp_eth", "esp_event", "esp_gdbstub", "esp_hid", "esp_http_client", "esp_http_server", "esp_https_ota", "esp_https_server", "esp_hw_support", "esp_lcd", "esp_local_ctrl", "esp_mm", "esp_netif", "esp_netif_stack", "esp_partition", "esp_phy", "esp_pm", "esp_psram", "esp_ringbuf", "esp_rom", "esp_system", "esp_timer", "esp_vfs_console", "esp_wifi", "espcoredump", "esptool_py", "fatfs", "freertos", "hal", "heap", "http_parser", "idf_test", "ieee802154", "json", "log", "lwip", "main", "mbedtls", "mqtt", "newlib", "nvs_flash", "nvs_sec_provider", "openthread", "partition_table", "protobuf-c", "protocomm", "pthread", "riscv", "sdmmc", "soc", "spi_flash", "spiffs", "tcp_transport", "ulp", "unity", "usb", "vfs", "wear_levelling", "wifi_provisioning", "wpa_supplicant", "" ],
-    "build_component_paths" : [ "/home/rax/esp/v5.3/esp-idf/components/app_trace", "/home/rax/esp/v5.3/esp-idf/components/app_update", "/home/rax/esp/v5.3/esp-idf/components/bootloader", "/home/rax/esp/v5.3/esp-idf/components/bootloader_support", "/home/rax/esp/v5.3/esp-idf/components/bt", "/home/rax/esp/v5.3/esp-idf/components/cmock", "/home/rax/esp/v5.3/esp-idf/components/console", "/home/rax/esp/v5.3/esp-idf/components/cxx", "/home/rax/esp/v5.3/esp-idf/components/driver", "/home/rax/esp/v5.3/esp-idf/components/efuse", "/home/rax/esp/v5.3/esp-idf/components/esp-tls", "/home/rax/esp/v5.3/esp-idf/components/esp_adc", "/home/rax/esp/v5.3/esp-idf/components/esp_app_format", "/home/rax/esp/v5.3/esp-idf/components/esp_bootloader_format", "/home/rax/esp/v5.3/esp-idf/components/esp_coex", "/home/rax/esp/v5.3/esp-idf/components/esp_common", "/home/rax/esp/v5.3/esp-idf/components/esp_driver_ana_cmpr", "/home/rax/esp/v5.3/esp-idf/components/esp_driver_cam", "/home/rax/esp/v5.3/esp-idf/components/esp_driver_dac", "/home/rax/esp/v5.3/esp-idf/components/esp_driver_gpio", "/home/rax/esp/v5.3/esp-idf/components/esp_driver_gptimer", "/home/rax/esp/v5.3/esp-idf/components/esp_driver_i2c", "/home/rax/esp/v5.3/esp-idf/components/esp_driver_i2s", "/home/rax/esp/v5.3/esp-idf/components/esp_driver_isp", "/home/rax/esp/v5.3/esp-idf/components/esp_driver_jpeg", "/home/rax/esp/v5.3/esp-idf/components/esp_driver_ledc", "/home/rax/esp/v5.3/esp-idf/components/esp_driver_mcpwm", "/home/rax/esp/v5.3/esp-idf/components/esp_driver_parlio", "/home/rax/esp/v5.3/esp-idf/components/esp_driver_pcnt", "/home/rax/esp/v5.3/esp-idf/components/esp_driver_ppa", "/home/rax/esp/v5.3/esp-idf/components/esp_driver_rmt", "/home/rax/esp/v5.3/esp-idf/components/esp_driver_sdio", "/home/rax/esp/v5.3/esp-idf/components/esp_driver_sdm", "/home/rax/esp/v5.3/esp-idf/components/esp_driver_sdmmc", "/home/rax/esp/v5.3/esp-idf/components/esp_driver_sdspi", "/home/rax/esp/v5.3/esp-idf/components/esp_driver_spi", "/home/rax/esp/v5.3/esp-idf/components/esp_driver_tsens", "/home/rax/esp/v5.3/esp-idf/components/esp_driver_uart", "/home/rax/esp/v5.3/esp-idf/components/esp_driver_usb_serial_jtag", "/home/rax/esp/v5.3/esp-idf/components/esp_eth", "/home/rax/esp/v5.3/esp-idf/components/esp_event", "/home/rax/esp/v5.3/esp-idf/components/esp_gdbstub", "/home/rax/esp/v5.3/esp-idf/components/esp_hid", "/home/rax/esp/v5.3/esp-idf/components/esp_http_client", "/home/rax/esp/v5.3/esp-idf/components/esp_http_server", "/home/rax/esp/v5.3/esp-idf/components/esp_https_ota", "/home/rax/esp/v5.3/esp-idf/components/esp_https_server", "/home/rax/esp/v5.3/esp-idf/components/esp_hw_support", "/home/rax/esp/v5.3/esp-idf/components/esp_lcd", "/home/rax/esp/v5.3/esp-idf/components/esp_local_ctrl", "/home/rax/esp/v5.3/esp-idf/components/esp_mm", "/home/rax/esp/v5.3/esp-idf/components/esp_netif", "/home/rax/esp/v5.3/esp-idf/components/esp_netif_stack", "/home/rax/esp/v5.3/esp-idf/components/esp_partition", "/home/rax/esp/v5.3/esp-idf/components/esp_phy", "/home/rax/esp/v5.3/esp-idf/components/esp_pm", "/home/rax/esp/v5.3/esp-idf/components/esp_psram", "/home/rax/esp/v5.3/esp-idf/components/esp_ringbuf", "/home/rax/esp/v5.3/esp-idf/components/esp_rom", "/home/rax/esp/v5.3/esp-idf/components/esp_system", "/home/rax/esp/v5.3/esp-idf/components/esp_timer", "/home/rax/esp/v5.3/esp-idf/components/esp_vfs_console", "/home/rax/esp/v5.3/esp-idf/components/esp_wifi", "/home/rax/esp/v5.3/esp-idf/components/espcoredump", "/home/rax/esp/v5.3/esp-idf/components/esptool_py", "/home/rax/esp/v5.3/esp-idf/components/fatfs", "/home/rax/esp/v5.3/esp-idf/components/freertos", "/home/rax/esp/v5.3/esp-idf/components/hal", "/home/rax/esp/v5.3/esp-idf/components/heap", "/home/rax/esp/v5.3/esp-idf/components/http_parser", "/home/rax/esp/v5.3/esp-idf/components/idf_test", "/home/rax/esp/v5.3/esp-idf/components/ieee802154", "/home/rax/esp/v5.3/esp-idf/components/json", "/home/rax/esp/v5.3/esp-idf/components/log", "/home/rax/esp/v5.3/esp-idf/components/lwip", "/home/rax/esp/Risc-V-Keyer/main", "/home/rax/esp/v5.3/esp-idf/components/mbedtls", "/home/rax/esp/v5.3/esp-idf/components/mqtt", "/home/rax/esp/v5.3/esp-idf/components/newlib", "/home/rax/esp/v5.3/esp-idf/components/nvs_flash", "/home/rax/esp/v5.3/esp-idf/components/nvs_sec_provider", "/home/rax/esp/v5.3/esp-idf/components/openthread", "/home/rax/esp/v5.3/esp-idf/components/partition_table", "/home/rax/esp/v5.3/esp-idf/components/protobuf-c", "/home/rax/esp/v5.3/esp-idf/components/protocomm", "/home/rax/esp/v5.3/esp-idf/components/pthread", "/home/rax/esp/v5.3/esp-idf/components/riscv", "/home/rax/esp/v5.3/esp-idf/components/sdmmc", "/home/rax/esp/v5.3/esp-idf/components/soc", "/home/rax/esp/v5.3/esp-idf/components/spi_flash", "/home/rax/esp/v5.3/esp-idf/components/spiffs", "/home/rax/esp/v5.3/esp-idf/components/tcp_transport", "/home/rax/esp/v5.3/esp-idf/components/ulp", "/home/rax/esp/v5.3/esp-idf/components/unity", "/home/rax/esp/v5.3/esp-idf/components/usb", "/home/rax/esp/v5.3/esp-idf/components/vfs", "/home/rax/esp/v5.3/esp-idf/components/wear_levelling", "/home/rax/esp/v5.3/esp-idf/components/wifi_provisioning", "/home/rax/esp/v5.3/esp-idf/components/wpa_supplicant", "" ],
+    "build_components" : [ "app_trace", "app_update", "bootloader", "bootloader_support", "bt", "cmock", "console", "cxx", "driver", "efuse", "esp-tls", "esp_adc", "esp_app_format", "esp_bootloader_format", "esp_coex", "esp_common", "esp_driver_ana_cmpr", "esp_driver_cam", "esp_driver_dac", "esp_driver_gpio", "esp_driver_gptimer", "esp_driver_i2c", "esp_driver_i2s", "esp_driver_isp", "esp_driver_jpeg", "esp_driver_ledc", "esp_driver_mcpwm", "esp_driver_parlio", "esp_driver_pcnt", "esp_driver_ppa", "esp_driver_rmt", "esp_driver_sdio", "esp_driver_sdm", "esp_driver_sdmmc", "esp_driver_sdspi", "esp_driver_spi", "esp_driver_tsens", "esp_driver_uart", "esp_driver_usb_serial_jtag", "esp_eth", "esp_event", "esp_gdbstub", "esp_hid", "esp_http_client", "esp_http_server", "esp_https_ota", "esp_https_server", "esp_hw_support", "esp_lcd", "esp_local_ctrl", "esp_mm", "esp_netif", "esp_netif_stack", "esp_partition", "esp_phy", "esp_pm", "esp_psram", "esp_ringbuf", "esp_rom", "esp_system", "esp_timer", "esp_vfs_console", "esp_wifi", "espcoredump", "esptool_py", "fatfs", "freertos", "hal", "heap", "http_parser", "idf_test", "ieee802154", "json", "log", "lwip", "main", "mbedtls", "morse_keyer", "mqtt", "network", "newlib", "nvs_flash", "nvs_sec_provider", "openthread", "partition_table", "protobuf-c", "protocomm", "pthread", "riscv", "sdmmc", "soc", "spi_flash", "spiffs", "tcp_transport", "ulp", "unity", "usb", "vfs", "wear_levelling", "wifi_provisioning", "wpa_supplicant", "" ],
+    "build_component_paths" : [ "/home/rax/esp/v5.3/esp-idf/components/app_trace", "/home/rax/esp/v5.3/esp-idf/components/app_update", "/home/rax/esp/v5.3/esp-idf/components/bootloader", "/home/rax/esp/v5.3/esp-idf/components/bootloader_support", "/home/rax/esp/v5.3/esp-idf/components/bt", "/home/rax/esp/v5.3/esp-idf/components/cmock", "/home/rax/esp/v5.3/esp-idf/components/console", "/home/rax/esp/v5.3/esp-idf/components/cxx", "/home/rax/esp/v5.3/esp-idf/components/driver", "/home/rax/esp/v5.3/esp-idf/components/efuse", "/home/rax/esp/v5.3/esp-idf/components/esp-tls", "/home/rax/esp/v5.3/esp-idf/components/esp_adc", "/home/rax/esp/v5.3/esp-idf/components/esp_app_format", "/home/rax/esp/v5.3/esp-idf/components/esp_bootloader_format", "/home/rax/esp/v5.3/esp-idf/components/esp_coex", "/home/rax/esp/v5.3/esp-idf/components/esp_common", "/home/rax/esp/v5.3/esp-idf/components/esp_driver_ana_cmpr", "/home/rax/esp/v5.3/esp-idf/components/esp_driver_cam", "/home/rax/esp/v5.3/esp-idf/components/esp_driver_dac", "/home/rax/esp/v5.3/esp-idf/components/esp_driver_gpio", "/home/rax/esp/v5.3/esp-idf/components/esp_driver_gptimer", "/home/rax/esp/v5.3/esp-idf/components/esp_driver_i2c", "/home/rax/esp/v5.3/esp-idf/components/esp_driver_i2s", "/home/rax/esp/v5.3/esp-idf/components/esp_driver_isp", "/home/rax/esp/v5.3/esp-idf/components/esp_driver_jpeg", "/home/rax/esp/v5.3/esp-idf/components/esp_driver_ledc", "/home/rax/esp/v5.3/esp-idf/components/esp_driver_mcpwm", "/home/rax/esp/v5.3/esp-idf/components/esp_driver_parlio", "/home/rax/esp/v5.3/esp-idf/components/esp_driver_pcnt", "/home/rax/esp/v5.3/esp-idf/components/esp_driver_ppa", "/home/rax/esp/v5.3/esp-idf/components/esp_driver_rmt", "/home/rax/esp/v5.3/esp-idf/components/esp_driver_sdio", "/home/rax/esp/v5.3/esp-idf/components/esp_driver_sdm", "/home/rax/esp/v5.3/esp-idf/components/esp_driver_sdmmc", "/home/rax/esp/v5.3/esp-idf/components/esp_driver_sdspi", "/home/rax/esp/v5.3/esp-idf/components/esp_driver_spi", "/home/rax/esp/v5.3/esp-idf/components/esp_driver_tsens", "/home/rax/esp/v5.3/esp-idf/components/esp_driver_uart", "/home/rax/esp/v5.3/esp-idf/components/esp_driver_usb_serial_jtag", "/home/rax/esp/v5.3/esp-idf/components/esp_eth", "/home/rax/esp/v5.3/esp-idf/components/esp_event", "/home/rax/esp/v5.3/esp-idf/components/esp_gdbstub", "/home/rax/esp/v5.3/esp-idf/components/esp_hid", "/home/rax/esp/v5.3/esp-idf/components/esp_http_client", "/home/rax/esp/v5.3/esp-idf/components/esp_http_server", "/home/rax/esp/v5.3/esp-idf/components/esp_https_ota", "/home/rax/esp/v5.3/esp-idf/components/esp_https_server", "/home/rax/esp/v5.3/esp-idf/components/esp_hw_support", "/home/rax/esp/v5.3/esp-idf/components/esp_lcd", "/home/rax/esp/v5.3/esp-idf/components/esp_local_ctrl", "/home/rax/esp/v5.3/esp-idf/components/esp_mm", "/home/rax/esp/v5.3/esp-idf/components/esp_netif", "/home/rax/esp/v5.3/esp-idf/components/esp_netif_stack", "/home/rax/esp/v5.3/esp-idf/components/esp_partition", "/home/rax/esp/v5.3/esp-idf/components/esp_phy", "/home/rax/esp/v5.3/esp-idf/components/esp_pm", "/home/rax/esp/v5.3/esp-idf/components/esp_psram", "/home/rax/esp/v5.3/esp-idf/components/esp_ringbuf", "/home/rax/esp/v5.3/esp-idf/components/esp_rom", "/home/rax/esp/v5.3/esp-idf/components/esp_system", "/home/rax/esp/v5.3/esp-idf/components/esp_timer", "/home/rax/esp/v5.3/esp-idf/components/esp_vfs_console", "/home/rax/esp/v5.3/esp-idf/components/esp_wifi", "/home/rax/esp/v5.3/esp-idf/components/espcoredump", "/home/rax/esp/v5.3/esp-idf/components/esptool_py", "/home/rax/esp/v5.3/esp-idf/components/fatfs", "/home/rax/esp/v5.3/esp-idf/components/freertos", "/home/rax/esp/v5.3/esp-idf/components/hal", "/home/rax/esp/v5.3/esp-idf/components/heap", "/home/rax/esp/v5.3/esp-idf/components/http_parser", "/home/rax/esp/v5.3/esp-idf/components/idf_test", "/home/rax/esp/v5.3/esp-idf/components/ieee802154", "/home/rax/esp/v5.3/esp-idf/components/json", "/home/rax/esp/v5.3/esp-idf/components/log", "/home/rax/esp/v5.3/esp-idf/components/lwip", "/home/rax/esp/Risc-V-Keyer/main", "/home/rax/esp/v5.3/esp-idf/components/mbedtls", "/home/rax/esp/Risc-V-Keyer/components/morse_keyer", "/home/rax/esp/v5.3/esp-idf/components/mqtt", "/home/rax/esp/Risc-V-Keyer/components/network", "/home/rax/esp/v5.3/esp-idf/components/newlib", "/home/rax/esp/v5.3/esp-idf/components/nvs_flash", "/home/rax/esp/v5.3/esp-idf/components/nvs_sec_provider", "/home/rax/esp/v5.3/esp-idf/components/openthread", "/home/rax/esp/v5.3/esp-idf/components/partition_table", "/home/rax/esp/v5.3/esp-idf/components/protobuf-c", "/home/rax/esp/v5.3/esp-idf/components/protocomm", "/home/rax/esp/v5.3/esp-idf/components/pthread", "/home/rax/esp/v5.3/esp-idf/components/riscv", "/home/rax/esp/v5.3/esp-idf/components/sdmmc", "/home/rax/esp/v5.3/esp-idf/components/soc", "/home/rax/esp/v5.3/esp-idf/components/spi_flash", "/home/rax/esp/v5.3/esp-idf/components/spiffs", "/home/rax/esp/v5.3/esp-idf/components/tcp_transport", "/home/rax/esp/v5.3/esp-idf/components/ulp", "/home/rax/esp/v5.3/esp-idf/components/unity", "/home/rax/esp/v5.3/esp-idf/components/usb", "/home/rax/esp/v5.3/esp-idf/components/vfs", "/home/rax/esp/v5.3/esp-idf/components/wear_levelling", "/home/rax/esp/v5.3/esp-idf/components/wifi_provisioning", "/home/rax/esp/v5.3/esp-idf/components/wpa_supplicant", "" ],
     "build_component_info" : {
         "app_trace": {
             "alias": "idf::app_trace",
@@ -1165,8 +1165,8 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/rax/esp/Risc-V-Keyer/build/esp-idf/main/libmain.a",
-            "sources": [ "/home/rax/esp/Risc-V-Keyer/main/hello_world_main.cpp" ],
-            "include_dirs": []
+            "sources": [ "/home/rax/esp/Risc-V-Keyer/main/rvkeyer.cpp" ],
+            "include_dirs": [ "../components/morse_keyer/include", "../components/network/include" ]
         },
         "mbedtls": {
             "alias": "idf::mbedtls",
@@ -1183,6 +1183,21 @@
             "sources": [ "/home/rax/esp/v5.3/esp-idf/components/mbedtls/esp_crt_bundle/esp_crt_bundle.c", "/home/rax/esp/Risc-V-Keyer/build/x509_crt_bundle.S" ],
             "include_dirs": [ "port/include", "mbedtls/include", "mbedtls/library", "esp_crt_bundle/include" ]
         },
+        "morse_keyer": {
+            "alias": "idf::morse_keyer",
+            "target": "___idf_morse_keyer",
+            "prefix": "idf",
+            "dir": "/home/rax/esp/Risc-V-Keyer/components/morse_keyer",
+            "type": "LIBRARY",
+            "lib": "__idf_morse_keyer",
+            "reqs": [],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/rax/esp/Risc-V-Keyer/build/esp-idf/morse_keyer/libmorse_keyer.a",
+            "sources": [ "/home/rax/esp/Risc-V-Keyer/components/morse_keyer/src/MorseKeyer.cpp" ],
+            "include_dirs": [ "include" ]
+        },
         "mqtt": {
             "alias": "idf::mqtt",
             "target": "___idf_mqtt",
@@ -1197,6 +1212,21 @@
             "file": "/home/rax/esp/Risc-V-Keyer/build/esp-idf/mqtt/libmqtt.a",
             "sources": [ "/home/rax/esp/v5.3/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c", "/home/rax/esp/v5.3/esp-idf/components/mqtt/esp-mqtt/lib/mqtt_msg.c", "/home/rax/esp/v5.3/esp-idf/components/mqtt/esp-mqtt/lib/mqtt_outbox.c", "/home/rax/esp/v5.3/esp-idf/components/mqtt/esp-mqtt/lib/platform_esp32_idf.c" ],
             "include_dirs": [ "/home/rax/esp/v5.3/esp-idf/components/mqtt/esp-mqtt/include" ]
+        },
+        "network": {
+            "alias": "idf::network",
+            "target": "___idf_network",
+            "prefix": "idf",
+            "dir": "/home/rax/esp/Risc-V-Keyer/components/network",
+            "type": "LIBRARY",
+            "lib": "__idf_network",
+            "reqs": [],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "file": "/home/rax/esp/Risc-V-Keyer/build/esp-idf/network/libnetwork.a",
+            "sources": [ "/home/rax/esp/Risc-V-Keyer/components/network/src/NetworkManager.cpp" ],
+            "include_dirs": [ "include" ]
         },
         "newlib": {
             "alias": "idf::newlib",
@@ -2749,7 +2779,31 @@
             "priv_reqs": [],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": []
+            "include_dirs": [ "../components/morse_keyer/include", "../components/network/include" ]
+        },
+        "morse_keyer": {
+            "alias": "idf::morse_keyer",
+            "target": "___idf_morse_keyer",
+            "prefix": "idf",
+            "dir": "/home/rax/esp/Risc-V-Keyer/components/morse_keyer",
+            "lib": "__idf_morse_keyer",
+            "reqs": [],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "include_dirs": [ "include" ]
+        },
+        "network": {
+            "alias": "idf::network",
+            "target": "___idf_network",
+            "prefix": "idf",
+            "dir": "/home/rax/esp/Risc-V-Keyer/components/network",
+            "lib": "__idf_network",
+            "reqs": [],
+            "priv_reqs": [],
+            "managed_reqs": [],
+            "managed_priv_reqs": [],
+            "include_dirs": [ "include" ]
         }
     },
     "debug_prefix_map_gdbinit": "/home/rax/esp/Risc-V-Keyer/build/prefix_map_gdbinit"

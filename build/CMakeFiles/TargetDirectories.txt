@@ -806,3 +806,17 @@
 /home/rax/esp/Risc-V-Keyer/build/esp-idf/main/CMakeFiles/install.dir
 /home/rax/esp/Risc-V-Keyer/build/esp-idf/main/CMakeFiles/install/local.dir
 /home/rax/esp/Risc-V-Keyer/build/esp-idf/main/CMakeFiles/install/strip.dir
+/home/rax/esp/Risc-V-Keyer/build/esp-idf/morse_keyer/CMakeFiles/__idf_morse_keyer.dir
+/home/rax/esp/Risc-V-Keyer/build/esp-idf/morse_keyer/CMakeFiles/edit_cache.dir
+/home/rax/esp/Risc-V-Keyer/build/esp-idf/morse_keyer/CMakeFiles/rebuild_cache.dir
+/home/rax/esp/Risc-V-Keyer/build/esp-idf/morse_keyer/CMakeFiles/list_install_components.dir
+/home/rax/esp/Risc-V-Keyer/build/esp-idf/morse_keyer/CMakeFiles/install.dir
+/home/rax/esp/Risc-V-Keyer/build/esp-idf/morse_keyer/CMakeFiles/install/local.dir
+/home/rax/esp/Risc-V-Keyer/build/esp-idf/morse_keyer/CMakeFiles/install/strip.dir
+/home/rax/esp/Risc-V-Keyer/build/esp-idf/network/CMakeFiles/__idf_network.dir
+/home/rax/esp/Risc-V-Keyer/build/esp-idf/network/CMakeFiles/edit_cache.dir
+/home/rax/esp/Risc-V-Keyer/build/esp-idf/network/CMakeFiles/rebuild_cache.dir
+/home/rax/esp/Risc-V-Keyer/build/esp-idf/network/CMakeFiles/list_install_components.dir
+/home/rax/esp/Risc-V-Keyer/build/esp-idf/network/CMakeFiles/install.dir
+/home/rax/esp/Risc-V-Keyer/build/esp-idf/network/CMakeFiles/install/local.dir
+/home/rax/esp/Risc-V-Keyer/build/esp-idf/network/CMakeFiles/install/strip.dir

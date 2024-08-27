@@ -1,0 +1,33 @@
+# Exclude build directories
+build/
+*.o
+*.elf
+*.bin
+*.map
+
+# Exclude sdkconfig backups
+sdkconfig.old
+
+# Exclude IDE settings
+.vscode/
+.idea/
+
+# Exclude log files
+*.log
+
+# Exclude Python bytecode and virtual environments
+*.pyc
+__pycache__/
+env/
+.venv/
+
+# Exclude ESP-IDF specific directories
+.espressif/
+
+# Exclude containers
+.devcontainer/
+
+# Exclude Unittests
+pytest_hello_world.py
+
+

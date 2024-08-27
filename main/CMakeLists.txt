@@ -1,5 +1,4 @@
-idf_component_register(SRCS "hello_world_main.cpp"
-                    INCLUDE_DIRS "")
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
-                    
+# File: main/CMakeLists.txt
+
+idf_component_register(SRCS "rvkeyer.cpp"
+                       INCLUDE_DIRS "../components/morse_keyer/include" "../components/network/include")
