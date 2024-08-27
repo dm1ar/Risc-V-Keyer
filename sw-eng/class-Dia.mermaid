@@ -1,0 +1,180 @@
+classDiagram
+    %% Main RVKeyer Task - Green
+    class RVKeyer {
+        +initializeSystem()
+        +startKeying()
+        +handleMorseInput()
+        +processMorseOutput()
+        +shutdownSystem()
+        +decodeMorse()
+        +dynamicallySetParameters()
+    }
+    style RVKeyer fill:#B0E57C
+
+    %% ESP32 Initialization Task - Blue
+    class ESP32Init {
+        +initGPIO()
+        +initWiFi()
+        +initBluetooth()
+        +initNetSocket()
+        +initWatchDogTimer()
+        Note right of ESP32Init: Haha
+    }
+    style ESP32Init fill:#8CA6DB
+
+    class WatchDogTimer {
+        +startTimer()
+        +resetTimer()
+        +checkTaskHealth()
+    }
+    ESP32Init --> WatchDogTimer : Initializes
+    style WatchDogTimer fill:#8CA6DB
+
+    class NVMInit {
+        +initNVM()
+    }
+    ESP32Init --> NVMInit : Uses
+    style NVMInit fill:#8CA6DB
+
+    class ISRHandler {
+        +attachInterrupt(pin, ISR)
+        +detachInterrupt(pin)
+        +handleInterrupt()
+    }
+    ISRHandler --> ISRService : Calls
+    style ISRHandler fill:#8CA6DB
+
+    class ISRService {
+        +isrRoutine1()
+        +isrRoutine2()
+        +isrRoutine3()
+    }
+    style ISRService fill:#8CA6DB
+
+    class NetworkManager {
+        +connectWiFi(ssid, password)
+        +disconnectWiFi()
+        +connectBluetooth(device)
+        +disconnectBluetooth()
+        +initializeNetSocket()
+    }
+    ESP32Init --> NetworkManager : Uses
+    style NetworkManager fill:#8CA6DB
+
+    %% Morse Input Task - Orange
+    class MorseSymbolInput {
+        +readGPIOKeyer()
+        +readWebSocketMessage()
+        +readKeyboardUSB()
+        +processPaddleMode(mode)
+        -enum PaddleMode
+    }
+    style MorseSymbolInput fill:#F4A460
+
+    %% Morse Output Task - Purple
+    class MorseOutput {
+        +outputAnalogGPIO()
+        +outputKeyerGPIO()
+        +outputWebSocket()
+        +setVolume(volume)
+        -float volume
+    }
+    RVKeyer --> MorseOutput : Uses
+    MorseOutput --> MorseTranslator : Uses
+    style MorseOutput fill:#DDA0DD
+
+    %% Morse Translation and Decoding Task - Yellow
+    class MorseTranslator {
+        +translateToMorse(symbol)
+        +translateToASCII(morse)
+        -ITUCodeTable
+        -ARRLCodeTable
+    }
+    style MorseTranslator fill:#FFFACD
+
+    class MorseDecode {
+        +decodeMessage(input)
+        +replayMessage()
+    }
+    RVKeyer --> MorseDecode : Uses
+    style MorseDecode fill:#FFFACD
+
+    %% Dynamic Parameter Task - Cyan
+    class DynSet {
+        +setParameter(parameterName, value)
+        +getParameter(parameterName)
+        +updateParameter(parameterName, value)
+    }
+    DynSet --> NetworkManager : Uses
+    DynSet --> DatabaseHandler : Uses
+    DynSet --> NVMStore : Uses
+    RVKeyer --> DynSet : Uses
+    style DynSet fill:#AFEEEE
+
+    class NVMStore {
+        +storeToNVM()
+        +retrieveFromNVM()
+    }
+    DynSet --> NVMStore : Uses
+    style NVMStore fill:#AFEEEE
+
+    class DatabaseHandler {
+        +loadParameters()
+        +storeParameters()
+        +retrieveLogs()
+        +storeLogs()
+    }
+    style DatabaseHandler fill:#AFEEEE
+
+    %% Shutdown Task - Red
+    class Shutdown {
+        +performShutdown()
+    }
+    RVKeyer --> Shutdown : Uses
+    style Shutdown fill:#FF6A6A
+
+    %% Logging Task - Gray
+    class LogHandler {
+        +logMessage(level, message)
+        +processLog()
+        +sendLogNotification()
+    }
+    RVKeyer --> LogHandler : Uses
+    ESP32Init --> LogHandler : Uses
+    DatabaseHandler --> LogHandler : Uses
+    MorseTranslator --> LogHandler : Uses
+    ISRHandler --> LogHandler : Uses
+    NetworkManager --> LogHandler : Uses
+    DynSet --> LogHandler : Uses
+    Shutdown --> LogHandler : Uses
+    MorseDecode --> LogHandler : Uses
+    MorseOutput --> LogHandler : Uses
+    MorseSymbolInput --> LogHandler : Uses
+    style LogHandler fill:#D3D3D3
+
+    class Verbose {
+        +logVerbose(message)
+    }
+    LogHandler --> Verbose : Uses
+    style Verbose fill:#D3D3D3
+
+    class Info {
+        +logInfo(message)
+    }
+    LogHandler --> Info : Uses
+    style Info fill:#D3D3D3
+
+    class Warning {
+        +logWarning(message)
+    }
+    LogHandler --> Warning : Uses
+    style Warning fill:#D3D3D3
+
+    class Fatal {
+        +logFatal(message)
+    }
+    LogHandler --> Fatal : Uses
+    style Fatal fill:#D3D3D3
+
+    Note left of RVKeyer: Risc-V-Keyer<br/>Tasks are color coded
+

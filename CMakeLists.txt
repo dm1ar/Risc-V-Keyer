@@ -1,11 +1,20 @@
-# The following lines of boilerplate have to be in your project's
-# CMakeLists in this exact order for cmake to work correctly
+# Minimum CMake version required
 cmake_minimum_required(VERSION 3.16)
 
-include($ENV{IDF_PATH}/tools/cmake/project.cmake)
-project(Risc-V-Keyer)
+# Project name
+project(rvkeyer)
 
-set(EXTRA_COMPONENT_DIRS components/morse_keyer components/network)
-
-# Set C++ standard only for C++ files
+# Set C++ standard only for C++ files globally
 add_compile_options($<$<COMPILE_LANGUAGE:CXX>:-std=c++17>)
+
+# Include the main directory
+add_subdirectory(main)
+
+# Set the components directory
+set(EXTRA_COMPONENT_DIRS "${CMAKE_SOURCE_DIR}/components")
+
+# Include the components directory
+include_directories(${EXTRA_COMPONENT_DIRS})
+
+# Add the rvkeyer component
+add_subdirectory(components/rvkeyer)
