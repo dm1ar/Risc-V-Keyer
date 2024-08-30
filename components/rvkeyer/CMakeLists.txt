@@ -1,5 +1,3 @@
-# CMakeLists.txt for the rvkeyer component
-
 idf_component_register(
     SRCS "src/rvkeyer.cpp"
          "src/esp32_init.cpp"
@@ -12,4 +10,11 @@ idf_component_register(
          "src/watch_dog_timer.cpp"
          "src/nvm_store.cpp"
          "src/database_handler.cpp"
-         "src/morse_translator.cpp
+         "src/morse_translator.cpp"
+         "src/isr_handler.cpp"
+         "src/network_manager.cpp"
+    INCLUDE_DIRS "include"
+)
+
+# Set C++ standard only for C++ files
+add_compile_options($<$<COMPILE_LANGUAGE:CXX>:-std=c++17>)
