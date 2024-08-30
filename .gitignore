@@ -12,6 +12,9 @@ sdkconfig.old
 .vscode/
 .idea/
 
+# Exclude build dirs
+.build
+
 # Exclude log files
 *.log
 
