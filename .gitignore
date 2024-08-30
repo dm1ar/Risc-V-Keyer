@@ -13,7 +13,7 @@ sdkconfig.old
 .idea/
 
 # Exclude build dirs
-build
+**/build/
 
 # Exclude log files
 *.log
