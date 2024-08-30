@@ -1,16 +1,9 @@
-# Exclude build directories
-build/
-*.o
-*.elf
-*.bin
-*.map
-
-# Exclude sdkconfig backups
-sdkconfig.old
 
 # Exclude IDE settings
 .vscode/
-.idea/
+
+# Exclude containers
+.devcontainer
 
 # Exclude build dirs
 **/build/
