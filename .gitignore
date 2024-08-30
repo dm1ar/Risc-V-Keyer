@@ -13,7 +13,7 @@ sdkconfig.old
 .idea/
 
 # Exclude build dirs
-.build
+build
 
 # Exclude log files
 *.log
@@ -28,9 +28,7 @@ env/
 .espressif/
 
 # Exclude containers
-.devcontainer/
+./.devcontainer/
 
-# Exclude Unittests
-pytest_hello_world.py
 
 
