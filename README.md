@@ -32,7 +32,7 @@ The hardware setup is designed to be minimal yet powerful, using only the ESP32-
 ### Outputs
 
 - **Audio Level AUX**: For external audio output.
-- **Speaker (3W)**: A built-in speaker for immediate feedback and use.
+- **Speaker (3W)**: A built-in audio amp output for immediate feedback and use.
 - **Keyer (Transceiver Input, Isolated)**: The keyer output is designed to interface with a transceiver, ensuring isolated and safe communication.
 
 ### Connectivity
