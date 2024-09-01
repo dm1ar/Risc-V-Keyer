@@ -70,7 +70,9 @@ To ensure smooth collaboration, frequent commits and pulls are necessary. This m
 
 ### Top-Down Design Approach
 
-Following the principles from Jacob Bengio’s "Embedded Software Design", we adopt a top-down approach, ensuring that the architecture is solid before delving into coding.
+Following the principles from **Jacob Bengio’s "Embedded Software Design"**, we adopt a top-down approach, ensuring that the architecture is solid before delving into coding.
+
+Jacob's book is strongly recommended, if you want to delve deeper into State-of-the-Art Real-Time SW development.
 
 ### Architecture First, Coding by ChatGPT
 
