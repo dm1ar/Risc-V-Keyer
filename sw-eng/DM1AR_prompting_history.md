@@ -1,6 +1,6 @@
 # Here you find some recurring and example ChatGPT Prompts for Software- Engineering
 
-This is an iterative approach. Their are bugs and failures in the prompts and in ChatGPT answers, which have to be corrected in the next iteration.
+This is an iterative approach. Their are bugs and failures in the prompts and in ChatGPT answers, which have to be corrected in your next prompt iteration.
 
 ## Basics
 
