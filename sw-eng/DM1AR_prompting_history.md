@@ -1,6 +1,10 @@
-# Here you find some recurring ChatGPT Prompts for Software- Engineering
+# Here you find some recurring and example ChatGPT Prompts for Software- Engineering
+
+This is an iterative approach. Their are bugs and failures in the prompts and in ChatGPT answers, which have to be corrected in the next iteration.
 
 ## Basics
+
+This is always needed, to prepare ChatGPT for what is to come. Every line is needed.
 
 - We are doing an embedded code project together step-by-step
 - The project is a Morse Keyer
@@ -18,16 +22,20 @@
 - The main program is "rvkeyer.cpp"
 - use include files for additional classes adding functionality step-by-step
 - comment all classes and methods
-- include comment lines for author "Dr. Axel Richter, DM1AR", Date of creation, and Licence "MIT-Licence on all boiler plates together with the file name.
+- include comment lines for author <Author>, Date of creation, and Licence "MIT-Licence on all boiler plates together with the file name.
 
 ## Hardware
 
-- GPIO10 is used as an inverted push-button switch input pinned high. Used for a straigth keyer input and paddle input dit
-- GPIO11 is used as an invertet push-button switch input pinned high. Used for paddle input dah
-- GPIO8 is used as a inverted led output, normally low
+Read the ESP32-C6 doc first, to define what you want. ChatGPT can not do this for you.
+
+- GPIO10 is used as an inverted push-button switch input with internal pull-up. Used for a straigth keyer input and paddle input dit
+- GPIO11 is used as an invertet push-button switch input with internal pull-up. Used for paddle input dah
+- GPIO8 is used as a digital RGB led output. The RGB Led is digitally addressed by only one GPIO output. 
 - Use Hardware interupts for switch inputs and define ISR's
 
 ## Some WIP prompts (Work in Progress)
+
+Use all your available knowledge to specify the requirements. If you don't, ChatGPT will be sometimes ok, sometimes far off.
 
 - use also the C6 Technical Reference Dokument for further development of the code
 - let's do some refactoring:
@@ -52,11 +60,11 @@
 
 ## next itertions
 
-- show all classes generated so far and there connection. Also use a class for ISR handler and the ISR service routines.
+- show all classes generated so far and their connection. Also use a class for ISR handler and the ISR service routines.
 - you lost the networkManager class
 - also create a errorhandller class and pipeline used by all other classes to comunicate and prosess errors.
 - i miss the main class "rvkeyer"
-- also i forgot the audio output class which calls 3 methods (or classes): Analog GPIO output to a local audio amp. switching of an external tranceiver with keyer GPIO output (hardware comes later). Or signaling by wehsocket to a host.
+- also i forgot the audio output class which calls 3 methods (or classes): Analog GPIO output to a local audio amp. switching of an external tranceiver with keyer GPIO output (hardware comes later). Or signaling by websocket to a host.
 - and  we need a morse symbol input class. The class can be fed by live input from the GPIO keyer or from a websocket message or from a keyboard connected to USB2
 - the GPIO keyer  kann be straight keyer or paddle. Paddle keyers have 4 modes; lambic_A, lambic_B, Single, Ultimatic
 - Analog Audio out has volume:0.8:0.8:float:Percent:0.0:1.0
@@ -143,6 +151,8 @@ Let's start by scaffolding the project with the necessary classes and functions,
     ├── morse_translator.cpp
     └── isr_handler.cpp
 ```
+
+Of course let ChatGPT generate a bash script to make that dir structure and run it once.
 
 ### CMakeLists.txt
 
