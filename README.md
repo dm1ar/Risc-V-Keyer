@@ -80,7 +80,7 @@ We start with a robust architecture design, followed by implementing the code wi
 
 #### Initial class diagram. To be refactored according to work in progress.
 
-![Class Diagram](sw-eng/banner.png)
+![Class Diagram](../dev_rtos_classes/Design-Files%20(Obsidian%20Vault)/SW%20Engineering/mermaid-diagram-2024-08-27-180241.png?raw=true)
 
 
 
