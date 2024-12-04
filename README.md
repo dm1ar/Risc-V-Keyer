@@ -3,7 +3,8 @@
 
 Welcome to the Risc-V-Keyer project! This is an open-source initiative to develop a highly customizable Morse code keyer based on the ESP32-C6-Devkit-1. We aim to build a powerful yet minimalistic keyer that leverages modern software engineering practices. Whether you're a seasoned developer or just starting out, we welcome your contributions!
 
-# This is Work-in-Progress WIP. No executabales yet. See dev_rtos_classes branch for current status.
+# This is Work-in-Progress WIP.   
+No executabels yet. See dev_rtos_classes branch for current status.
 
 #### Initial class diagram. To be refactored according to work in progress.
 
